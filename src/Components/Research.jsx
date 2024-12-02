@@ -3,7 +3,6 @@ import { Fade } from "react-awesome-reveal";
 import {
     BrowserRouter as Router, Route, Link, Routes
   } from "react-router-dom";
-  import logo from '../Images/Logo_2.jpg'
   import report1 from '../Images/report1.png'
   import poster1 from '../Images/poster1.png'
   import GOAT from '../Images/GOAT.jpg'
