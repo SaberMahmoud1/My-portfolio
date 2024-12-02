@@ -1,0 +1,1175 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home{background-color: rgb(164, 11, 149);width: auto;display: flex;padding-top: 1vh;
+flex-direction: column;align-items: start;justify-content: center;padding-bottom: 7vh;}
+.homeimg1{width:98.7vw;height: 100vh;}
+
+/*the self introduction*/
+.intro {
+  display: flex; /* Use flexbox layout to align the content horizontally */
+  flex-direction: row; /* Ensure that the children (image and text) are aligned side-by-side */
+  align-items: center; /* Vertically center the children */
+  justify-content: start; /* Align children to the start (left side) */
+  width: 45vw; /* Set the width to 70% of the viewport width */
+  background: linear-gradient(135deg, #020024, #090979, #0c2157, #4b0082); /* Space-like gradient */
+  background-size: cover; /* Ensure the gradient covers the entire element */
+  color: #ffffff; /* White text color for better contrast */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.1); /* Glow effect */
+  padding: 2vw; /* Add some padding around the container */
+  border-radius: 3.5vw; /* Round the corners with a curved effect */
+  margin-bottom: 12vh; /* Add space below the element */
+  margin-left: 5vw; /* Add space on the left side */
+  margin-top: 20vh; /* Add space above the element */
+  position: relative; /* Allow for star effect */
+  overflow: hidden; /* Hide any extra content */
+  height: 40vh; /* Set a fixed height for the intro container */
+}
+
+/* Add subtle stars effect */
+.intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 1%, rgba(0, 0, 0, 0) 50%);
+  background-size: 50px 50px;
+  animation: stars 20s linear infinite;
+  opacity: 0.6; /* Subtle star effect */
+  pointer-events: none; /* Ignore mouse events on this pseudo-element */
+  z-index: 1; /* Set the star effect in the background */
+}
+
+/* Star animation */
+@keyframes stars {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-50px, -50px);
+  }
+}
+
+/* Self-introduction section */
+.subintro {
+  display: flex; /* Use flexbox to arrange the children vertically */
+  flex-direction: column; /* Arrange children vertically */
+  width: 40%; /* Set the width of the text section */
+  height: auto; /* Allow the height to adjust automatically based on content */
+  padding: 2vw; /* Add padding around the content */
+  z-index: 2; /* Ensure the text appears above the stars */
+}
+
+/* Title of the introduction */
+.subintrotitle {
+  color: #ffd700; /* Space-themed gold color for the title */
+  font-size: 2vw; /* Set the font size to 3% of the viewport width (responsive) */
+  text-decoration: underline; /* Underline the text */
+  margin: 0; /* Remove default margins */
+}
+
+/* Paragraph describing the self-introduction */
+.subintrop {
+  color: #ffffff; /* White text for easy readability */
+  font-size: 1.25vw; /* Set the font size to 1.25% of the viewport width (responsive) */
+  font-weight: bolder; /* Make the font weight bolder */
+  margin-top: 1vh; /* Add some space between title and paragraph */
+  width: 100%; /* Make the paragraph take full width */
+}
+
+/* Image styling for intro images */
+.introimg {
+  width: 20vw; /* Set width to 30% of the viewport width */
+  height: 45vh; /* Set height to 45% of the viewport height */
+  object-fit: cover; /* Ensure the image covers the container proportionally */
+  border-top-left-radius: 3vw; /* Round the top-left corner */
+  border-top-right-radius: 3vw; /* Round the top-right corner */
+  border-bottom-left-radius: 3vw; /* Round the bottom-left corner */
+  border-bottom-right-radius: 3vw; /* Round the bottom-right corner */
+  margin-left: 2vw; /* Add some space between text and image */
+  z-index: 2; /* Ensure the image is above the stars */
+}
+
+
+
+/****************************************************************************************************/
+/* Navigation item styling */
+/* Global navbar styling */
+.navbar {
+  position: fixed; /* Fixes the navbar in place */
+  top: 0; /* Ensures it's pinned to the top */
+  left: 0; /* Aligns it to the left */
+  width: 60%; /* Spans the full width of the viewport */
+  height: 10vh; /* Sets a fixed height */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-around; /* Evenly spaces out items */
+  align-items: center; /* Centers items vertically */
+  z-index: 1000; /* Keeps the navbar on top of other elements */
+  background: linear-gradient(135deg, rgba(25, 25, 112, 0.9), rgba(0, 13, 81, 0.8)); /* Gradient background */
+  backdrop-filter: blur(10px); /* Adds a blur effect */
+  padding: 0 5vw; /* Horizontal padding for inner spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+  overflow: hidden; /* Prevents overflow issues */
+  border-radius: 20px; /* Optional: Rounds the corners */
+}
+
+
+/* Hover effect for the navbar */
+.navbar:hover {
+  background-color: #3077e0; /* Change background color to a darker blue on hover */
+}
+
+/* Styling for the navbar items */
+.navlink {
+  display: block; /* Make the link a block element */
+  width: auto; /* Ensure the width adjusts to the image */
+  height: auto; /* Ensure the height adjusts to the image */
+  text-decoration: none; /* Remove underline from links */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Styling for navbar images (icons) */
+.navimage {
+  width: 3.5vw; /* Set the image width to 7% of the viewport width */
+  height: 3.5vw; /* Maintain square shape by setting height equal to width */
+  border-radius: 50%; /* Make the images circular */
+  border: 2px solid rgba(255, 255, 255, 0.8); /* Add a glowing border */
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.7); /* Glowing effect around images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+/* Hover effect for images (scale the image and add a glow) */
+.navimage:hover {
+  transform: scale(1.2); /* Enlarge the image slightly on hover */
+  box-shadow: 0 0 30px rgba(0, 191, 255, 1); /* Increase glow on hover */
+}
+
+/* Adding subtle stars effect to the navbar */
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 1%, rgba(0, 0, 0, 0) 50%);
+  background-size: 40px 40px;
+  animation: stars 20s linear infinite; /* Star animation */
+  opacity: 0.6; /* Subtle starry effect */
+  pointer-events: none; /* Ignore mouse events on this pseudo-element */
+}
+
+@keyframes stars {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-50px, -50px);
+  }
+}
+
+
+/***********************************************************************************************/
+/* Post intro styling */
+.postintro {
+  /* background-color: rgb(255, 208, 0); Set background color to yellow */
+  margin-left: 4vw; /* Add 2% viewport width margin to the left */
+  border-top-left-radius: 4vw; /* Round top-left corner */
+  border-top-right-radius: 4vw; /* Round top-right corner */
+  padding: 1vw; /* Add 1% viewport width padding */
+  border-bottom-left-radius: 4vw; /* Round bottom-left corner */
+  border-bottom-right-radius: 4vw; /* Round bottom-right corner */
+  height: auto; /* Let height adjust automatically based on content */
+  width: 90vw; /* Set width to 70% of the viewport width */
+  display: grid; /* Enable grid layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+  grid-template-rows: repeat(3, auto); /* 3 rows, with height based on content */
+  gap: 20px; /* Space between the items */
+  justify-items: center; /* Center each item horizontally */
+  padding: 20px; /* Optional padding around the container */
+}
+
+/* Sub post intro styling */
+.subpostintro {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange items horizontally */
+  font-size: 4.5vh; /* Set font size to 5% of viewport height */
+  color: aliceblue; /* Set text color to light blue */
+}
+
+/* Sub post intro images styling */
+.subpostintro img {
+  width: 6vw; /* Set width to 6% of the viewport width */
+  height: 15vh; /* Set height to 15% of the viewport height */
+  margin-left: 1vw; /* Add 1% viewport width margin to the left */
+}
+
+/* Styling for "lfcmp" (likely a component) */
+.lfcmp {
+  background-color: white; /* Set background color to white */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange items horizontally */
+  width: 36vw; /* Set width to 65% of the viewport width */
+  height: 40vh; /* Set height to 35% of the viewport height */
+  border-radius: 4vw; /* Round corners with a radius of 4% of the viewport width */
+  align-items: center; /* Align items in the center vertically */
+  justify-content: space-between; /* Distribute items evenly */
+  color: rgb(9, 9, 102); /* Set text color to dark blue */
+  padding-left: 1.5vw; /* Add 1.5% viewport width padding to the left */
+  padding-top: 0; /* No padding at the top */
+  margin-bottom: 6vh; /* Add 6% viewport height margin at the bottom */
+}
+
+/* Image styling for "lfcmp" */
+.lfcmp img {
+  width: 23vw; /* Set width to 20% of the viewport width */
+  height: 35vh; /* Set height to 35% of the viewport height */
+  border-radius: 4vw; /* Round the corners of the image */
+}
+
+/* Header styling for "lfcmp" */
+.lfcmp h4 {
+  font-size: 2.3vw; /* Set font size to 2.3% of the viewport width */
+  margin: 0; /* Remove margin */
+  text-decoration: underline; /* Underline the text */
+}
+
+/* Paragraph styling for "lfcmp" */
+.lfcmp p {
+  font-weight: bolder; /* Make the text bold */
+  color: black; /* Set text color to black */
+  font-size: 1vw; /* Set font size to 1.34% of the viewport width */
+}
+/********************************************************************************************/
+
+/* Digital section styling */
+.digital {
+  background-color: rgb(10, 10, 88); /* Set background color to dark blue */
+  width: auto; /* Let width adjust automatically */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Align items in the center horizontally */
+  justify-content: center; /* Align items in the center vertically */
+  padding-bottom: 7vh; /* Add 7% viewport height padding at the bottom */
+}
+
+/* Intro styling for digital section */
+.dintro {
+  width: 98.7vw; /* Set width to 98.7% of the viewport width */
+  height: 100vh; /* Set height to 100% of the viewport height */
+}
+
+/* .mdcmp Class: Component with an image and button */
+.mdcmp {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Align children in a column */
+  align-items: center; /* Center align children horizontally */
+  margin-top: 4vh; /* Add a top margin of 4% of the viewport height */
+  white-space: pre-line; /* Allow line breaks to be respected in text */
+  margin-bottom: 12vh; /* Add space below the element */
+  margin-left: 0vw; /* Add space on the left side */
+  margin-top: 20vh; /* Add space above the element */
+}
+
+/* Image inside .mdcmp */
+.mdcmp img {
+  width: 50vw; /* Image width set to 55% of the viewport width */
+  height: 45vh; /* Image height set to 45% of the viewport height */
+  border-radius: 3.5vw; /* Rounded corners with 3.5% of the viewport width */
+  border-style: groove; /* Groove style border */
+  margin-bottom: 2.5vh; /* Bottom margin of 2.5% of the viewport height */
+}
+
+/* Button inside .mdcmp */
+.mdcmp button {
+  background-color: rgb(17, 134, 163); /* Background color in RGB */
+  color: gold; /* Text color set to gold */
+  border-radius: 2vw; /* Rounded corners with 2% of the viewport width */
+  width: 12vw; /* Width set to 12% of the viewport width */
+  height: 6vh; /* Height set to 6% of the viewport height */
+  font-size: 2vw; /* Font size set to 2% of the viewport width */
+  font-style: italic; /* Italicize the text */
+  border-style: groove; /* Groove style border */
+  font-weight: bold; /* Bold font weight */
+}
+
+/* Button hover effect inside .mdcmp */
+.mdcmp button:hover {
+  background-color: rgb(18, 180, 255); /* Change background color on hover */
+  cursor: pointer; /* Change cursor to pointer to indicate clickable button */
+}
+
+/* .mdrcmp Class: Similar to .mdcmp with different button style */
+.mdrcmp {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Align children in a column */
+  align-items: center; /* Center align children horizontally */
+  margin-top: 4vh; /* Add a top margin of 4% of the viewport height */
+  white-space: pre-line; /* Allow line breaks to be respected in text */
+  margin-bottom: 12vh; /* Add space below the element */
+  margin-left: 0vw; /* Add space on the left side */
+  margin-top: 20vh; /* Add space above the element */
+}
+
+/* Image inside .mdrcmp */
+.mdrcmp img {
+  width: 50vw; /* Image width set to 55% of the viewport width */
+  height: 45vh; /* Image height set to 45% of the viewport height */
+  border-radius: 3.5vw; /* Rounded corners with 3.5% of the viewport width */
+  border-style: groove; /* Groove style border */
+  margin-bottom: 2.5vh; /* Bottom margin of 2.5% of the viewport height */
+}
+
+/* Button inside .mdrcmp (with gold background and dark text) */
+.mdrcmp button {
+  background-color: gold; /* Gold background color */
+  color: rgb(7, 34, 58); /* Dark text color */
+  border-radius: 2vw; /* Rounded corners with 2% of the viewport width */
+  width: 12vw; /* Width set to 12% of the viewport width */
+  height: 6vh; /* Height set to 6% of the viewport height */
+  font-size: 2vw; /* Font size set to 2% of the viewport width */
+  font-style: italic; /* Italicize the text */
+  border-style: groove; /* Groove style border */
+  font-weight: bold; /* Bold font weight */
+}
+
+/* Button hover effect inside .mdrcmp */
+.mdrcmp button:hover {
+  background-color: yellow; /* Change background color to yellow on hover */
+  cursor: pointer; /* Change cursor to pointer to indicate clickable button */
+}
+
+/* .mdccmp Class: Similar to .mdcmp but for a different component */
+.mdccmp {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Align children in a column */
+  align-items: center; /* Center align children horizontally */
+  margin-top: 4vh; /* Add a top margin of 4% of the viewport height */
+  white-space: pre-line; /* Allow line breaks to be respected in text */
+  margin-bottom: 12vh; /* Add space below the element */
+  margin-left: 0vw; /* Add space on the left side */
+  margin-top: 20vh; /* Add space above the element */
+}
+
+/* Image inside .mdccmp */
+.mdccmp img {
+  width: 50vw; /* Image width set to 55% of the viewport width */
+  height: 45vh; /* Image height set to 45% of the viewport height */
+  border-radius: 3.5vw; /* Rounded corners with 3.5% of the viewport width */
+  border-style: groove; /* Groove style border */
+  margin-bottom: 2.5vh; /* Bottom margin of 2.5% of the viewport height */
+}
+
+/* Button inside .mdccmp (same style as in .mdcmp) */
+.mdccmp button {
+  background-color: rgb(17, 134, 163); /* Background color in RGB */
+  color: gold; /* Text color set to gold */
+  border-radius: 2vw; /* Rounded corners with 2% of the viewport width */
+  width: 12vw; /* Width set to 12% of the viewport width */
+  height: 6vh; /* Height set to 6% of the viewport height */
+  font-size: 2vw; /* Font size set to 2% of the viewport width */
+  font-style: italic; /* Italicize the text */
+  border-style: groove; /* Groove style border */
+  font-weight: bold; /* Bold font weight */
+}
+
+/* Button hover effect inside .mdccmp */
+.mdccmp button:hover {
+  background-color: rgb(18, 180, 255); /* Change background color on hover */
+  cursor: pointer; /* Change cursor to pointer to indicate clickable button */
+}
+
+/* .projects Class: A container for project-related components */
+.projects {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Align children in a column */
+  width: 84vw; /* Set width to 84% of the viewport width */
+  height: auto; /* Height will adjust automatically based on content */
+}
+
+/* .blue Class: Component with blue background and column layout */
+.blue {
+  background-color: #114797; /* Set background color to blue */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange child elements in a column */
+  border-radius: 4vw; /* Rounded corners with 4% of the viewport width */
+  padding-left: 1.5vw; /* Padding on the left side */
+  padding-top: 0; /* No padding on top */
+  height: auto; /* Height adjusts automatically based on content */
+  margin-top: 2.9vh; /* Top margin of 2.9% of the viewport height */
+}
+
+/* Heading inside .blue */
+.blue h3 {
+  color: gold; /* Text color set to gold */
+  font-weight: bold; /* Make text bold */
+  font-size: 2.5vw; /* Font size set to 2.5% of the viewport width */
+}
+
+/* Paragraph inside .blue */
+.blue p {
+  color: rgb(248, 248, 248); /* Text color set to a light gray */
+  font-weight: bold; /* Make text bold */
+  font-size: 1.4vw; /* Font size set to 1.4% of the viewport width */
+  margin-right: 1vw; /* Right margin set to 1% of the viewport width */
+}
+
+/* Anchor tag inside .blue (links) */
+.blue a {
+  text-decoration: none; /* Remove underline from links */
+  color: rgb(0, 0, 0); /* Text color set to black */
+  font-size: 1.4vw; /* Font size set to 1.4% of the viewport width */
+  font-weight: bold; /* Make text bold */
+}
+
+/* Anchor tag hover effect inside .blue */
+.blue a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+/* .subblue Class: Subcomponent with horizontal layout and space between items */
+.subblue {
+  display: flex; /* Use flexbox layout */
+  flex-direction: row; /* Arrange child elements in a row */
+  justify-content: space-between; /* Distribute items with space between */
+  padding-right: 1.5vw; /* Padding on the right side */
+}
+
+/* Image inside .subblue */
+.subblue img {
+  width: 35vw; /* Image width set to 35% of the viewport width */
+  height: 40vh; /* Image height set to 40% of the viewport height */
+}
+
+/* .yellow Class: Component with yellow background and column layout */
+.yellow {
+  background-color: gold; /* Set background color to gold */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange child elements in a column */
+  border-radius: 4vw; /* Rounded corners with 4% of the viewport width */
+  padding-left: 1.5vw; /* Padding on the left side */
+  padding-top: 0; /* No padding on top */
+  height: auto; /* Height adjusts automatically based on content */
+  margin-top: 2.9vh; /* Top margin of 2.9% of the viewport height */
+}
+
+/* Heading inside .yellow */
+.yellow h3 {
+  color: #114797; /* Text color set to blue */
+  font-weight: bold; /* Make text bold */
+  font-size: 2.5vw; /* Font size set to 2.5% of the viewport width */
+}
+
+/* Paragraph inside .yellow */
+.yellow p {
+  color: rgb(0, 0, 0); /* Text color set to black */
+  font-weight: bold; /* Make text bold */
+  font-size: 1.4vw; /* Font size set to 1.4% of the viewport width */
+  margin-right: 1vw; /* Right margin set to 1% of the viewport width */
+}
+
+/* Anchor tag inside .yellow (links) */
+.yellow a {
+  text-decoration: none; /* Remove underline from links */
+  color: rgb(255, 255, 255); /* Text color set to white */
+  font-size: 1.4vw; /* Font size set to 1.4% of the viewport width */
+  font-weight: bold; /* Make text bold */
+}
+
+/* Anchor tag hover effect inside .yellow */
+.yellow a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+/* .subyellow Class: Subcomponent with horizontal layout and space between items */
+.subyellow {
+  display: flex; /* Use flexbox layout */
+  flex-direction: row; /* Arrange child elements in a row */
+  justify-content: space-between; /* Distribute items with space between */
+  padding-right: 1.5vw; /* Padding on the right side */
+}
+
+/* Image inside .subyellow */
+.subyellow img {
+  width: 35vw; /* Image width set to 35% of the viewport width */
+  height: 40vh; /* Image height set to 40% of the viewport height */
+}
+
+/* .dskills Class: Component with gold background, centered items, and flex layout */
+.dskills {
+  background-color: gold; /* Set background color to gold */
+  width: 87vw; /* Set width to 87% of the viewport width */
+  height: auto; /* Height adjusts automatically based on content */
+  border-radius: 4vw; /* Rounded corners with 4% of the viewport width */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange child elements in a column */
+  align-items: center; /* Center items horizontally */
+  margin-top: 3vh; /* Top margin of 3% of the viewport height */
+}
+
+/* .dlist Class: Component with gray background and column layout for a list */
+.dlist {
+  background-color: gainsboro; /* Set background color to gray */
+  width: 83vw; /* Set width to 83% of the viewport width */
+  border-radius: 4vw; /* Rounded corners with 4% of the viewport width */
+  height: 45vh; /* Set height to 45% of the viewport height */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange child elements in a column */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  font-size: 2vw; /* Font size set to 2% of the viewport width */
+  align-items: start; /* Align items to the start (left) */
+  justify-content: center; /* Center items vertically */
+  color: #1a0a64; /* Text color set to a dark blue */
+  font-weight: bold; /* Make text bold */
+}
+
+/* List items inside .dlist */
+.dlist li {
+  margin-bottom: 1vh; /* Bottom margin of 1% of the viewport height */
+}
+
+
+
+/* .bluec - Blue container section */
+.bluec {
+  background-color: #114797; /* Dark blue background */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items in a column */
+  border-radius: 4vw; /* Rounded corners */
+  padding-left: 1.5vw; /* Left padding */
+  padding-top: 0; /* No top padding */
+  height: auto; /* Height adjusts automatically */
+  margin-top: 2.9vh; /* Margin at the top for spacing */
+  width: 84vw; /* Set width to 84% of the viewport width */
+}
+
+/* Heading style for blue container */
+.bluec h3 {
+  color: gold; /* Gold text color */
+  font-weight: bold; /* Bold text */
+  font-size: 2.5vw; /* Font size relative to viewport width */
+}
+
+/* Paragraph text style inside blue container */
+.bluec p {
+  color: rgb(248, 248, 248); /* Light gray text */
+  font-weight: bold; /* Bold text */
+  font-size: 1.4vw; /* Font size relative to viewport width */
+  margin-right: 1vw; /* Right margin for spacing */
+  white-space: pre-wrap; /* Allow wrapping and preserve white spaces */
+}
+
+/* Links inside blue container */
+.bluec a {
+  text-decoration: none; /* No underline by default */
+  color: rgb(0, 0, 0); /* Black text color */
+  font-size: 1.4vw; /* Font size relative to viewport width */
+  font-weight: bold; /* Bold text */
+}
+
+/* Hover effect on links inside blue container */
+.bluec a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* .subbluec - Subsection with blue background (for image container) */
+.subbluec {
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: space-between; /* Distribute space evenly */
+  padding-right: 1.5vw; /* Right padding */
+}
+
+/* Images inside .subbluec */
+.subbluec img {
+  width: 30vw; /* Set width to 30% of the viewport width */
+  height: 50vh; /* Set height to 50% of the viewport height */
+}
+
+/* .yellowc - Yellow container section */
+.yellowc {
+  background-color: gold; /* Gold background */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items in a column */
+  border-radius: 4vw; /* Rounded corners */
+  padding-left: 1.5vw; /* Left padding */
+  padding-top: 0; /* No top padding */
+  height: auto; /* Height adjusts automatically */
+  margin-top: 2.9vh; /* Margin at the top for spacing */
+  width: 84vw; /* Set width to 84% of the viewport width */
+}
+
+/* Heading style for yellow container */
+.yellowc h3 {
+  color: #114797; /* Dark blue text color */
+  font-weight: bold; /* Bold text */
+  font-size: 2.5vw; /* Font size relative to viewport width */
+}
+
+/* Paragraph text style inside yellow container */
+.yellowc p {
+  color: rgb(0, 0, 0); /* Black text color */
+  font-weight: bold; /* Bold text */
+  font-size: 1.4vw; /* Font size relative to viewport width */
+  margin-right: 1vw; /* Right margin for spacing */
+  white-space: pre-wrap; /* Allow wrapping and preserve white spaces */
+}
+
+/* Links inside yellow container */
+.yellowc a {
+  text-decoration: none; /* No underline by default */
+  color: rgb(255, 255, 255); /* White text color */
+  font-size: 1.4vw; /* Font size relative to viewport width */
+  font-weight: bold; /* Bold text */
+}
+
+/* Hover effect on links inside yellow container */
+.yellowc a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* .subyellowc - Subsection with yellow background (for image container) */
+.subyellowc {
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: space-between; /* Distribute space evenly */
+  padding-right: 1.5vw; /* Right padding */
+}
+
+/* Images inside .subyellowc */
+.subyellowc img {
+  width: 30vw; /* Set width to 30% of the viewport width */
+  height: 50vh; /* Set height to 50% of the viewport height */
+}
+
+/****************************************************************************************************/
+
+/* .research - Research section with dark blue background */
+.research {
+  background-color:transparent; /* Dark blue background */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+  width: auto; /* Width adjusts automatically */
+  padding-bottom: 7vh; /* Bottom padding for spacing */
+}
+
+/* .introres - Introductory research content */
+.introres {
+  height: 100vh; /* Full viewport height */
+  width: 98.7vw; /* Slightly less than full viewport width */
+  margin-bottom: 5vh; /* Bottom margin for spacing */
+}
+
+/* .pintro - Section with an Alice blue background, centered content */
+.pintro {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  background-color:transparent; /* Light blue background */
+  height: auto; /* Height adjusts automatically */
+  width: 75vw; /* Width set to 75% of the viewport width */
+  margin-top: 20vh; /* Margin from the top */
+  border-radius: 3vw; /* Rounded corners */
+  color: darkorange; /* Dark blue text color */
+  font-size: 1.55vw; /* Font size relative to viewport width */
+}
+
+/* .fintro - Section with a dark blue background, flex layout for image and text */
+.fintro {
+  width: 72vw; /* Set width to 72% of the viewport width */
+  height: auto; /* Height adjusts automatically */
+  background-color: #07316b; /* Dark blue background */
+  border-radius: 3vw; /* Rounded corners */
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: start; /* Align items to the top */
+  justify-content: space-around; /* Space items evenly */
+  color: white; /* White text color */
+  font-size: 1.7vw; /* Font size relative to viewport width */
+  padding: 2vh; /* Vertical padding */
+  margin-bottom: 3vh; /* Margin at the bottom */
+}
+
+/* Images inside .fintro */
+.fintro img {
+  width: 25vw; /* Image width set to 25% of the viewport width */
+  height: 30vh; /* Image height set to 60% of the viewport height */
+}
+
+/* .tintro - Section with a dark background and flex layout for image and text */
+.tintro {
+  width: 72vw; /* Set width to 72% of the viewport width */
+  height: auto; /* Height adjusts automatically */
+  background-color: #041731; /* Very dark blue background */
+  border-radius: 3vw; /* Rounded corners */
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: start; /* Align items to the top */
+  justify-content: space-around; /* Space items evenly */
+  color: rgb(255, 255, 255); /* White text color */
+  font-size: 1.7vw; /* Font size relative to viewport width */
+  padding: 2vh; /* Vertical padding */
+  margin-bottom: 3vh; /* Margin at the bottom */
+}
+
+/* Images inside .tintro */
+.tintro img {
+  width: 0vw; /* Image width set to 25% of the viewport width */
+  height: 30vh; /* Image height set to 30% of the viewport height */
+}
+
+/* .reintro - Section with a dark blue background, flex layout for image and text */
+.reintro {
+  width: 72vw; /* Set width to 72% of the viewport width */
+  height: auto; /* Height adjusts automatically */
+  background-color: #07316b; /* Dark blue background */
+  border-radius: 3vw; /* Rounded corners */
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: start; /* Align items to the top */
+  justify-content: space-around; /* Space items evenly */
+  color: rgb(255, 255, 255); /* White text color */
+  font-size: 1.7vw; /* Font size relative to viewport width */
+  padding: 2vh; /* Vertical padding */
+  margin-bottom: 3vh; /* Margin at the bottom */
+}
+
+/* Images inside .reintro */
+.reintro img {
+  width: 30vw; /* Image width set to 30% of the viewport width */
+  height: 60vh; /* Image height set to 60% of the viewport height */
+}
+
+/* Links inside .reintro */
+.reintro a {
+  text-decoration: none; /* No underline by default */
+  margin-top: 4vh; /* Top margin for spacing */
+  color: white; /* White text color */
+  font-size: 1.9vw; /* Font size relative to viewport width */
+  font-weight: bold; /* Bold text */
+}
+
+/* Hover effect on links inside .reintro */
+.reintro a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* .retextp - Flexbox layout for text with space between items */
+.retextp {
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space items evenly */
+  flex-direction: column; /* Arrange items vertically */
+}
+
+/* .pointro - Section with a dark blue background, flex layout for image and text */
+.pointro {
+  width: 72vw; /* Set width to 72% of the viewport width */
+  height: auto; /* Height adjusts automatically */
+  background-color: #041731; /* Very dark blue background */
+  border-radius: 3vw; /* Rounded corners */
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: start; /* Align items to the top */
+  justify-content: space-around; /* Space items evenly */
+  color: rgb(255, 255, 255); /* White text color */
+  font-size: 1.7vw; /* Font size relative to viewport width */
+  padding: 2vh; /* Vertical padding */
+  margin-bottom: 3vh; /* Margin at the bottom */
+}
+
+/* Images inside .pointro */
+.pointro img {
+  width: 32vw; /* Image width set to 32% of the viewport width */
+  height: 70vh; /* Image height set to 70% of the viewport height */
+}
+
+/* Links inside .pointro */
+.pointro a {
+  text-decoration: none; /* No underline by default */
+  margin-top: 4vh; /* Top margin for spacing */
+  color: white; /* White text color */
+  font-size: 1.9vw; /* Font size relative to viewport width */
+  font-weight: bold; /* Bold text */
+}
+
+/* Hover effect on links inside .pointro */
+.pointro a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* .mintro - Section with a gold background and centered content */
+.mintro {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center content vertically */
+  background-color: aliceblue; /* Light blue background */
+  height: auto; /* Height adjusts automatically */
+  width: 75vw; /* Set width to 75% of the viewport width */
+  margin-top: 6vh; /* Margin from the top */
+  border-radius: 2vw; /* Rounded corners */
+  color: #041731; /* Dark blue text color */
+  font-size: 1.9vw; /* Font size relative to viewport width */
+  padding: 5vh; /* Vertical padding */
+  font-weight: bold; /* Bold text */
+  background-color: gold; /* Gold background */
+}
+
+
+/* .anim sets the height of an element to 15% of the viewport height */
+.anim {
+  height: 15vh;
+}
+
+/*********************************************************************************************************************/
+
+/* .web styles a container with a blue background, centers content, and adds padding at the bottom */
+.web {
+  background-color: rgb(10, 10, 88);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding-bottom: 7vh;
+}
+
+/* .webintro takes up the full viewport height and almost full width */
+.webintro {
+  height: 100vh;
+  width: 98.7vw;
+}
+
+
+
+
+/***************************************************************************************************************************/
+
+/* .about styles a container with a dark blue background, centered content, and padding at the bottom */
+.about {
+  width: auto;
+height: auto;
+background-color: transparent; /* Transparent background */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-bottom: 7vh;
+}
+
+/* .aboutintro styles a section that takes up the full height of the viewport */
+.aboutintro {
+  height: 100vh; /* Full viewport height */
+  width: 98.7vw; /* Almost full viewport width */
+}
+
+/* .cont styles a container with a silver background, a row layout, and space between items */
+.cont {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20vh;
+  margin-bottom: 6vh;
+  background-color: silver; /* Silver background */
+  border-radius: 4vw; /* Rounded corners */
+  justify-content: space-between; /* Space between items */
+}
+
+/* .cont img styles an image inside .cont with specific width, height, and rounded right corners */
+.cont img {
+  width: 30vw;
+  height: auto;
+  border-top-right-radius: 4vw;
+  border-bottom-right-radius: 4vw;
+}
+
+/* .conttxt styles a container for text inside .cont, with padding */
+.conttxt {
+  padding: 2vw;
+  height: auto;
+}
+
+/* .conttxt h1 styles the heading with an underlined text, specific color, and font size */
+.conttxt h1 {
+  font-size: 2.8vw;
+  text-decoration: underline;
+  color: #1a0a64; /* Dark blue color */
+}
+
+/* .conttxt h3 styles the subheading with italic text and a teal color */
+.conttxt h3 {
+  font-size: 1.5vw;
+  font-style: italic;
+  color: rgb(43, 121, 124); /* Teal color */
+}
+
+/* .conttxt p styles the paragraph with a bold font and specified size */
+.conttxt p {
+  font-size: 1.4vw;
+  font-weight: bold;
+}
+
+/* .cv styles a flex container with a row layout, centered content, and a dark blue background */
+.cv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  height: auto;
+  background-color: silver; /* Dark blue background */
+  color: #1a0a64; /* Gold text color */
+  border-radius: 4vw;
+  margin-top: 20vh;
+}
+
+/* .cvtxt styles the text container inside .cv, with padding */
+.cvtxt {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+}
+
+/* .cv h1 styles the heading inside .cv with italic text and larger font size */
+.cv h1 {
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 3.2vw;
+}
+
+/* .cv p styles the paragraph inside .cv with a specific font color and size */
+.cv p {
+  font-size: 2.2vw;
+  color:rgb(43, 121, 124); /* Light blue color */
+  font-weight: bold;
+}
+
+/* .cv img styles the image inside .cv with width and height, and rounded right corners */
+.cv img {
+  width: 40vw;
+  height: 55vh;
+  border-top-right-radius: 4vw;
+  border-bottom-right-radius: 4vw;
+}
+
+/* .cv a styles links inside .cv with white color, bold font, and underline */
+.cv a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.8vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* .cv a:hover styles links on hover with increased font size */
+.cv a:hover {
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+/* .cv a:visited styles visited links with the same white color and bold font */
+.cv a:visited {
+  color: white;
+  font-weight: bold;
+}
+
+/* .m styles a container with a border and specific color, rounded corners, and margin at the top */
+.m {
+  width: 80vw;
+  height: 55vh;
+  border-radius: 5vw;
+  border-style: solid;
+  border-color: rgb(39, 115, 255); /* Light blue border */
+  margin-top: 20vh;
+}
+
+/* .botnav styles a container with a blue background, center-aligned content, and a top border */
+.botnav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3077e0; /* Blue background */
+  width: 98.75vw;
+  height: 11vh;
+  border-top-color: gold; /* Gold top border */
+  border-top-style: solid;
+  font-weight: bold;
+}
+
+/* .botit styles a row layout container for the bot navigation items */
+.botit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+/* .contactt styles a container for contact items, aligned in reverse row */
+.contactt {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+/* .contactt a styles links inside .contactt with underline and specific size */
+.contactt a {
+  text-decoration: underline;
+  color: white;
+  font-size: 1.2vw;
+}
+
+/* .contactt h4 styles the heading inside .contactt with no decoration and specific size */
+.contactt h4 {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2vw;
+}
+
+/* .contactt img styles the image inside .contactt with specific size and margin */
+.contactt img {
+  width: 3vw;
+  height: 5vh;
+  margin-right: 0.3vw;
+}
+
+/* .contactt a:hover styles links when hovered with a pointer cursor and underline */
+.contactt a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* .contactt a:visited styles visited links with the same white color */
+.contactt a:visited {
+  color: white;
+}
+
+
+
+          @media only screen and (max-width:768px){.m{height: 33vh;width: 77vw;}
+           .cv img{height:auto;}
+           .subintrotitle{font-size:5vw;}
+           .navitem a {font-size: 1.5vw;}
+           .intro{padding: 1vw;padding-left: 2.5vw;width: auto;}
+           .navitem a:hover{font-size: 1.5vw;text-decoration: underline;}
+           .subintrop{font-size:2.2vw;}
+           .mnavbar{margin-top: -12vh;padding: 0;}
+           .navitem img{height: 3vh;}
+           .mynavphoto{height: 0;}
+           .introimg{height: auto;border-radius: 4vw;}
+           .subpostintro img{height: 5vh;width: 8vw;}
+           .subpostintro h3{font-size:3.5vw ;}
+           .blue h3{font-size: 3vw;}
+           .blue p{font-size: 2vw;}
+           .blue a{font-size: 2vw;}
+           .yellow h3{font-size: 3vw;}
+           .yellow p{font-size: 2vw;}
+           .yellow a{font-size: 2vw;}
+           .bluec h3{font-size: 3vw;}
+           .bluec p{font-size: 2vw;}
+           .yellowc h3{font-size: 3vw;}
+           .yellowc p{font-size: 2vw;}
+          .pintro{font-size: 2.2vw;}
+          .fintro{font-size: 2.3vw;}
+          .reintro{font-size: 2.3vw;}
+          .pointro{font-size: 2.3vw;}
+          .reintro{font-size: 2.3vw;}
+          .tintro{font-size: 2.3vw;}
+          .wcor h3{font-size: 2.7vw;}
+          .wcor p{font-size: 1.8vw;}
+          .wcorb ul{font-size: 2vw;}
+          .mintro{font-size: 2.5vw;}
+          .webgif{height: auto;}
+          .webtit h2{font-size: 3.3vw;}
+          .wtxt p{font-size: 1.65vw;}
+          .wtxtr p{font-size: 1.65vw;}
+           .lfcmp img{height: auto;}
+           .lfcmp{height: auto;padding: 1vw;padding-left: 1.5vw;}
+           .lfcmp h4{font-size: 2.7vw;}
+           .lfcmp p{font-size: 2vw;height: auto;}
+           .mnavbar{height: auto;}
+           .navbar{height: auto;padding: 0;}
+           .homeimg1{height: auto;}
+           .dintro{height: auto;}
+           .mdcmp img{height: auto;}
+           .mdccmp button{font-size: 3vw;}
+           .mdcmp button{font-size: 3vw;}
+           .mdrcmp button{font-size: 3vw;}
+           .mdrcmp img{height: auto;}
+           .mdccmp img{height: auto;}
+           .subblue img{height: auto;}
+           .subbluec img{height: auto;}
+           .subyellow img{height: auto;}
+           .subyellowc img{height: auto;}
+           .wtxt{height: auto;}
+           .dlist{height: auto;width: 70vw;}
+           .dskills{height: auto;}
+           .wtxtr{height: auto;}
+           .pintro{width: 85vw;}
+           .introres{height: auto;}
+           .fintro img{height: auto;}
+           .tintro img{height: auto;}
+           .reintro img{height: auto;}
+           .pointro img {height: auto;}
+           .webintro{height: auto;}
+           .dlabnyc img{height: auto;}
+           .dlabnyc{align-items: center;}
+           .dredc{align-items: center;}
+           .dredc img{height: auto;}
+           .aboutintro{height: auto;}
+           .contactt img{height:3.5vh;width: 3.2vw;}
+           .botnav{height: 6.5vh;}
+           .conttxt h1{font-size: 3vw;}
+           .conttxt h3{font-size: 2vw;}
+           .conttxt p{font-size: 1.9vw;}
+           .contactt a{font-size: 1.55vw;}
+           .contactt h4{font-size: 1.55vw;}
+
+          }
