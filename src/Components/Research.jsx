@@ -38,7 +38,7 @@ export default function Research() {
       </div></Fade>
      <Fade delay={200}> <div className='tintro'>
       <p>Our team project, titled "Robot Kinematics: A Study on Inverse Kinematics," focused on modeling and analyzing the motion of robotic arms to solve inverse kinematics problems. We utilized mathematical equations, such as trigonometric relationships and geometric constraints, to implement and simulate robotic arm motion. These equations were instrumental in developing algorithms for calculating joint angles, enabling precise positioning and practical applications in robotics and automation.</p>
-      <img src={logo}alt='Loading⏳'/>
+      <img src={""}alt='Loading⏳'/>
       </div></Fade>
       <Fade delay={200}><div className='reintro'>
       <div className='retext'>
@@ -65,7 +65,7 @@ export default function Research() {
       </div></Fade>
      <Fade delay={200}> <div className='tintro'>
       <p>veinmatics-our team-project title was "Mathematical Modeling and Diagnosis of Atherosclerosis". Conducted an in-depth study on the causes and diagnosis of atherosclerosis, focusing on mathematical modeling to predict and analyze plaque buildup in arterial walls. </p>
-      <img src={logo}alt='Loading⏳'/>
+      <img src={""}alt='Loading⏳'/>
       </div></Fade>
       <Fade delay={200}><div className='reintro'>
       <div className='retext'>
