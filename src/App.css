@@ -321,20 +321,21 @@ flex-direction: column;align-items: start;justify-content: center;padding-bottom
 
 /* Button inside .mdcmp */
 .mdcmp button {
-  background-color: rgb(17, 134, 163); /* Background color in RGB */
-  color: gold; /* Text color set to gold */
+  background-color: transparent; /* Background color in RGB */
+  color:  transparent; /* Text color set to gold */
   border-radius: 2vw; /* Rounded corners with 2% of the viewport width */
-  width: 12vw; /* Width set to 12% of the viewport width */
-  height: 6vh; /* Height set to 6% of the viewport height */
+  width: 49vw; /* Width set to 12% of the viewport width */
+  height: 44vh; /* Height set to 6% of the viewport height */
   font-size: 2vw; /* Font size set to 2% of the viewport width */
   font-style: italic; /* Italicize the text */
-  border-style: groove; /* Groove style border */
+  border-style: none; /* Groove style border */
   font-weight: bold; /* Bold font weight */
+  margin-top: -47vh;
 }
 
 /* Button hover effect inside .mdcmp */
 .mdcmp button:hover {
-  background-color: rgb(18, 180, 255); /* Change background color on hover */
+  background-color:transparent; /* Change background color on hover */
   cursor: pointer; /* Change cursor to pointer to indicate clickable button */
 }
 
@@ -361,20 +362,21 @@ flex-direction: column;align-items: start;justify-content: center;padding-bottom
 
 /* Button inside .mdrcmp (with gold background and dark text) */
 .mdrcmp button {
-  background-color: gold; /* Gold background color */
-  color: rgb(7, 34, 58); /* Dark text color */
+  background-color: transparent; /* Background color in RGB */
+  color:  transparent; /* Text color set to gold */
   border-radius: 2vw; /* Rounded corners with 2% of the viewport width */
-  width: 12vw; /* Width set to 12% of the viewport width */
-  height: 6vh; /* Height set to 6% of the viewport height */
+  width: 49vw; /* Width set to 12% of the viewport width */
+  height: 44vh; /* Height set to 6% of the viewport height */
   font-size: 2vw; /* Font size set to 2% of the viewport width */
   font-style: italic; /* Italicize the text */
-  border-style: groove; /* Groove style border */
+  border-style: none; /* Groove style border */
   font-weight: bold; /* Bold font weight */
+  margin-top: -47vh;
 }
 
 /* Button hover effect inside .mdrcmp */
 .mdrcmp button:hover {
-  background-color: yellow; /* Change background color to yellow on hover */
+  background-color:transparent; /* Change background color to yellow on hover */
   cursor: pointer; /* Change cursor to pointer to indicate clickable button */
 }
 
@@ -401,20 +403,21 @@ flex-direction: column;align-items: start;justify-content: center;padding-bottom
 
 /* Button inside .mdccmp (same style as in .mdcmp) */
 .mdccmp button {
-  background-color: rgb(17, 134, 163); /* Background color in RGB */
-  color: gold; /* Text color set to gold */
+  background-color: transparent; /* Background color in RGB */
+  color:  transparent; /* Text color set to gold */
   border-radius: 2vw; /* Rounded corners with 2% of the viewport width */
-  width: 12vw; /* Width set to 12% of the viewport width */
-  height: 6vh; /* Height set to 6% of the viewport height */
+  width: 49vw; /* Width set to 12% of the viewport width */
+  height: 44vh; /* Height set to 6% of the viewport height */
   font-size: 2vw; /* Font size set to 2% of the viewport width */
   font-style: italic; /* Italicize the text */
-  border-style: groove; /* Groove style border */
+  border-style: none; /* Groove style border */
   font-weight: bold; /* Bold font weight */
+  margin-top: -47vh;
 }
 
 /* Button hover effect inside .mdccmp */
 .mdccmp button:hover {
-  background-color: rgb(18, 180, 255); /* Change background color on hover */
+  background-color: transparent; /* Change background color on hover */
   cursor: pointer; /* Change cursor to pointer to indicate clickable button */
 }
 
