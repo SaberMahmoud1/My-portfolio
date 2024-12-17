@@ -333,11 +333,6 @@ flex-direction: column;align-items: start;justify-content: center;padding-bottom
   margin-top: -47vh;
 }
 
-/* Button hover effect inside .mdcmp */
-.mdcmp button:hover {
-  background-color:transparent; /* Change background color on hover */
-  cursor: pointer; /* Change cursor to pointer to indicate clickable button */
-}
 
 /* .mdrcmp Class: Similar to .mdcmp with different button style */
 .mdrcmp {
@@ -374,11 +369,6 @@ flex-direction: column;align-items: start;justify-content: center;padding-bottom
   margin-top: -47vh;
 }
 
-/* Button hover effect inside .mdrcmp */
-.mdrcmp button:hover {
-  background-color:transparent; /* Change background color to yellow on hover */
-  cursor: pointer; /* Change cursor to pointer to indicate clickable button */
-}
 
 /* .mdccmp Class: Similar to .mdcmp but for a different component */
 .mdccmp {
@@ -413,12 +403,6 @@ flex-direction: column;align-items: start;justify-content: center;padding-bottom
   border-style: none; /* Groove style border */
   font-weight: bold; /* Bold font weight */
   margin-top: -47vh;
-}
-
-/* Button hover effect inside .mdccmp */
-.mdccmp button:hover {
-  background-color: transparent; /* Change background color on hover */
-  cursor: pointer; /* Change cursor to pointer to indicate clickable button */
 }
 
 /* .projects Class: A container for project-related components */
@@ -1142,9 +1126,9 @@ padding-bottom: 7vh;
            .homeimg1{height: auto;}
            .dintro{height: auto;}
            .mdcmp img{height: auto;}
-           .mdccmp button{font-size: 3vw;}
-           .mdcmp button{font-size: 3vw;}
-           .mdrcmp button{font-size: 3vw;}
+           .mdccmp button{width: 24.8vh; height: 10.9vh; margin-top: -16vh;}
+           .mdcmp button{width: 24.8vh;  height: 10.9vh;  margin-top: -16vh;}
+           .mdrcmp button{width: 24.8vh; height: 10.9vh; margin-top: -16vh;}
            .mdrcmp img{height: auto;}
            .mdccmp img{height: auto;}
            .subblue img{height: auto;}
