@@ -1098,9 +1098,14 @@ padding-bottom: 7vh;
 
           @media only screen and (max-width:768px){.m{height: 33vh;width: 77vw;}
            .cv img{height:auto;}
-           .subintrotitle{font-size:5vw;}
+           .subintrotitle{font-size:4vw;}
            .navitem a {font-size: 1.5vw;}
-           .intro{padding: 1vw;padding-left: 2.5vw;width: auto;}
+           .intro{padding: 1vw;padding-left: 2.5vw;width:38VH; height: 18VH;}
+           .introimg {
+            width: 32vw; /* Set width to 30% of the viewport width */
+            height: 32vh; /* Set height to 45% of the viewport height */
+            padding-left: 3.5vw;
+          }
            .navitem a:hover{font-size: 1.5vw;text-decoration: underline;}
            .subintrop{font-size:2.2vw;}
            .mnavbar{margin-top: -12vh;padding: 0;}
