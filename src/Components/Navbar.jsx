@@ -3,7 +3,7 @@ import Nav from './Nav'; // Import Nav component for individual link items
 import home from '../Images/computer-icons-house-blue-technology-0a0b4bf9169418b2d715b685b61e3cc3.png';
 import research from '../Images/research.jpg';
 import ddesign from '../Images/degital.jpg';
-import web from '../Images/wep.png';
+import web from '../Images/wep.jpg';
 import about from '../Images/PngItem_3406810.png';
 import emb from '../Images/emb.jpg';
 
