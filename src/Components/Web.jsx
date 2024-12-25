@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade } from "react-awesome-reveal";
-import intro from '../Images/wep.png';
+import intro from '../Images/wep.jpg';
 import projimg from '../Images/ropot.png';
 import skillimg from '../Images/Picsart_23-09-02_02-19-11-790.jpg';
 import Wmlfcmp from './Wmlfcmp';
