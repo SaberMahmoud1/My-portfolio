@@ -13,48 +13,6 @@ const inter = Inter({
 	preload: true,
 });
 
-// export const metadata: Metadata = {
-// 	title: 'Niladri Chatterjee - Software Developer',
-// 	description: 'Niladri Chatterjee - Full Stack Developer specializing in MERN stack, React.js, Node.js, and modern web technologies. Expert in database development and web applications.',
-// 	keywords: 'Niladri Chatterjee, Niladri1, niladri1, Software Developer, Full Stack Developer, MERN Stack, Web Developer, React Developer, Next.js Expert, Database Developer, Frontend Specialist, Backend Developer, JavaScript Expert, TypeScript Developer, Node.js Developer, MongoDB Expert, SQL Developer',
-// 	authors: [{ name: 'Niladri Chatterjee' }],
-// 	creator: 'Niladri Chatterjee',
-// 	manifest: '/manifest.json',
-// 	themeColor: '#000000',
-// 	viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
-// 	openGraph: {
-// 		type: 'website',
-// 		locale: 'en_US',
-// 		url: 'https://niladri1.vercel.app/',
-// 		title: 'Niladri Chatterjee - Full Stack Developer',
-// 		description: 'Full-stack developer specializing in MERN stack, React.js, Node.js, and modern web technologies.',
-// 		siteName: 'Niladri Chatterjee Portfolio',
-// 	},
-// 	twitter: {
-// 		card: 'summary_large_image',
-// 		title: 'Niladri Chatterjee - Full Stack Developer',
-// 		description: 'Full-stack developer specializing in MERN stack, React.js, Node.js, and modern web technologies.',
-// 		creator: '@niladri_dev',
-// 	},
-// 	robots: {
-// 		index: true,
-// 		follow: true,
-// 		nocache: true,
-// 		googleBot: {
-// 			index: true,
-// 			follow: true,
-// 			noimageindex: true,
-// 		},
-// 	},
-// 	metadataBase: new URL('https://niladri1.vercel.app'),
-// 	alternates: {
-// 		canonical: '/',
-// 	},
-// 	verification: {
-// 		google: '/googlea4a36904e14398c1.html',
-// 	},
-// };
-
 export default function RootLayout({
 	children,
 }: {
