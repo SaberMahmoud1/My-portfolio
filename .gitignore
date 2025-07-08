@@ -28,6 +28,6 @@ Thumbs.db
 *.swp
 *.swo
 
-# Optional: Exclude build output when using Vercel
-.vercel
-.now
+# # Optional: Exclude build output when using Vercel
+# .vercel
+# .now
