@@ -42,12 +42,6 @@ const searchData = [
 		keywords: ['projects', 'portfolio', 'work', 'examples', 'github', 'code', 'open-source', 'web applications', 'full stack', 'mern stack', 'react', 'node']
 	},
 	{
-		title: 'Certificates',
-		description: 'View my certifications and achievements',
-		path: '/certificates',
-		keywords: ['certificates', 'certifications', 'achievements', 'courses', 'learning', 'skills', 'professional', 'development', 'awards', 'badges']
-	},
-	{
 		title: 'Contact',
 		description: 'Get in touch with me',
 		path: '/contact',
