@@ -332,14 +332,14 @@ export const skills: Skill[] = [
 	{ name: 'SpyGlass', level: 8, category: 'tool' },
 ];
 
-export type BlogPost = {
-	title: string;
-	excerpt: string;
-	date: string;
-	author: string;
-	image: string;
-	slug: string;
-};
+// export type BlogPost = {
+// 	title: string;
+// 	excerpt: string;
+// 	date: string;
+// 	author: string;
+// 	image: string;
+// 	slug: string;
+// };
 
 // export const blogPosts: BlogPost[] = [
 // 	{
