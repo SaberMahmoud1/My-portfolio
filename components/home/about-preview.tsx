@@ -34,7 +34,7 @@ export function AboutPreview() {
 							alt="Engineer portrait"
 							fill
 							className="object-cover"
-							sizes="(max-width: 768px) 100vw, 50vw"
+							sizes="(max-width: 768px) 100vw, 200vw"
 						/>
 					</motion.div>
 
@@ -61,7 +61,7 @@ export function AboutPreview() {
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Experience</h4>
-									<p className="text-sm text-muted-foreground">{new Date().getFullYear() - 2024}+ Years</p>
+									<p className="text-sm text-muted-foreground">{new Date().getFullYear() - 2025}+ Years</p>
 								</CardContent>
 							</Card>
 							<Card className="card-gradient">
